@@ -14,8 +14,8 @@ function new_image(get_image)
 	fabric.Image.fromURL(get_image, function(Img) {
 		block_image_object = Img;
 
-		block_image_object.scaleToWidth(blockr_image_width);
-		block_image_object.scaleToHeight(blockr_image_height);
+		block_image_object.scaleToWidth(block_image_width);
+		block_image_object.scaleToHeight(block_image_height);
 		block_image_object.set({
 			top:block_y,
 			left:block_x
@@ -33,7 +33,7 @@ console.log(keyPressed);
 
 	if(keyPressed == '82') // add appropriate keycode
 	{
-		new_image("rr1.png");
+		new_image('rr1.png');
 		console.log("r");
 	}
 	if(keyPressed == '71')
